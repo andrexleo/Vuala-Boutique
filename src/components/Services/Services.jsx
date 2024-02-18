@@ -84,8 +84,8 @@ const Services = () => {
         <div className="container">
           {/* Heading section  */}
           <div className="text-center mb-20">
-            <h1 className="text-4xl text-primary font-cursive ">
-              El Mejor Aroma Para Ti
+            <h1 className="text-4xl font- tracking-wider ">
+              Las Favoritas Del Mes
             </h1>
           </div>
 
@@ -95,7 +95,7 @@ const Services = () => {
               <div
                 data-aos="fade-up"
                 data-aos-delay={service.aosDelay}
-                className="rounded-2xl bg-white hover:bg-primary hover:text-white mt-20 relative shadow-xl duration-high group max-w-[300px]"
+                className="rounded-2xl bg-white hover:bg-primary/20 hover:text-white mt-20 relative shadow-xl duration-high group max-w-[300px]"
               >
                 <div className="h-[122px]">
                   <img

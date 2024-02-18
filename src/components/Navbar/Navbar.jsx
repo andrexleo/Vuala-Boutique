@@ -19,10 +19,11 @@ const Menu = [
     link: "/#about",
   },
 ];
+
 const Navbar = () => {
   return (
     <>
-      <div className="bg-gradient-to-r from-secondary  shadow-xl bg-gray-900 text-white">
+      <div className="bg-green shadow-md">
         <div className="container py-1">
           <div className="flex justify-between items-center">
             {/* Logo section */}
@@ -48,17 +49,17 @@ const Navbar = () => {
                   <li key={menu.id}>
                     <a
                       href={menu.link}
-                      className="inline-block text-xl py-4 px-4 text-white hover:text-white duration-200"
+                      className="inline-block text-xl font-semibold py-4 px-4 hover:text-primary duration-200"
                     >
                       {menu.name}
                     </a>
                   </li>
                 ))}
               </ul>
-              <button className=" bg-primary/10 hover:scale-105 duration-200 text-white px-4 py-2 rounded-full flex items-center gap-3">
+              <button className=" bg-secondary hover:scale-105 duration-200 text-gray-900 px-4 py-2 rounded-full flex items-center gap-3">
                 
-                <FaWhatsapp className="text-xl text-white drop-shadow-sm cursor-pointer" />
-                <a>55 25 55 66 78</a>
+                <FaWhatsapp className="text-xl text-secundary cursor-pointer" />
+                <a className="text-white">55 25 55 66 78</a>
               </button>
             </div>
           </div>

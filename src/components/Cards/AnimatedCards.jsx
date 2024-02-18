@@ -1,6 +1,6 @@
 import React from "react";
-import Photo1 from "../../assets/website/foto1.jpeg";
-import Photo2 from "../../assets/website/foto2.jpeg";
+import Photo1 from "../../assets/website/ali.jpeg";
+import Photo2 from "../../assets/website/velas.jpg.webp";
 import Photo3 from "../../assets/website/foto3.jpeg";
 import { Slide, Fade } from "react-awesome-reveal";
 
@@ -27,8 +27,8 @@ const CardsData = [
 const AnimatedCard = () => {
   return (
     <div className="container mx-auto">
-      <h1 className="text-center  text-4xl font-bold font-cursive text-primary mb-10 mt-0 sm:mt-0">
-        Conoce Los Olores
+      <h1 className="text-center  text-2xl font-semibold tracking-wider  mb-10 mt-0 sm:mt-0">
+       Conoce Diferentes Olores
       </h1>
 
       {/* cards section */}
@@ -42,7 +42,7 @@ const AnimatedCard = () => {
               <img
                 src={img}
                 alt=""
-                className="w-full max-w-[300px] h-[350px] rounded-lg"
+                className="w-full max-w-[400px] h-[350px] rounded-lg"
               />
               {/* overlay section */}
               <div className="absolute left-0 top-[-100%] opacity-0 group-hover:opacity-100 group-hover:top-[0] p-4 w-full h-full bg-black/60 group-hover:backdrop-blur-sm duration-500">
@@ -50,7 +50,7 @@ const AnimatedCard = () => {
                   <Slide cascade>
                     <h1 className="text-3xl font-bold">{title}</h1>
                     <Fade cascade damping={0.05}>
-                      <a>{desc}</a>
+                      <a className="text-secondary">{desc}</a>
                     </Fade>
                     <div>
                       <button className="border border-white px-4 py-2 rounded-lg hover:bg-black/20 duration-300">

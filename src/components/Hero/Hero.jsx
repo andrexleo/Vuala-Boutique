@@ -1,10 +1,18 @@
 import React from "react";
-import HeroVela from "../../assets/pngegg-5.png";
-
+import HeroVela from "../../assets/herovela.png";
+import HeroBg from "../../assets/heroBg.png";
+const BgStyle ={
+  backgroundImage: `url(${HeroBg})`,
+  backgroundRepeat: "no-repeat",
+  backgroundPosition: "center",
+  backgroundSize: "cover",
+  with: "100%",
+  height: "100%"
+}
 const Hero = () => {
   return (
     <>
-      <div className="min-h-[550px] sm:min-h-[600px] bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 flex justify-center items-center text-white">
+      <div style={BgStyle} className="min-h-[550px] sm:min-h-[600px] relative z-[-1] flex justify-center items-center mb-2">
         <div className="container pb-8 sm:pb-0">
           <div className="grid grid-cols-1 sm:grid-cols-2">
             {/* text content section */}
@@ -12,13 +20,13 @@ const Hero = () => {
               <h1
                 data-aos="fade-up"
                 data-aos-once="true"
-                className="text-5xl sm:text-6xl lg:text-7xl font-bold"
+                className="text-7xl"
               >
                 Aromatiza tu {" "}
                 <span
                   data-aos="zoom-out"
                   data-aos-delay="300"
-                  class="bg-clip-text text-transparent bg-gradient-to-b from-primary to-primary/90 font-cursive"
+                  class="bg-clip-text text-transparent bg-gradient-to-b from-secondary to-secondary/90 font-cursive"
                 >
                   Hogar y Espiritu
                 </span>{" "}
